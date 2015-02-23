@@ -105,7 +105,7 @@
            <span class="glyphicon glyphicon-edit"></span> Add</a>
       </h2>
       <dl>
-      {% for implementation in sortedPages %}
+      {% for implementation in site.pages %}
       {% if implementation.type == 'use_case' and implementation.standards contains page.name %}
       <dt>
         <a href="{{ implementation.website }}">{{ implementation.title }}</a>
